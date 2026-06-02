@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Trip Generator</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png.svg">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">TravelNest</a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="budget.html">Budget Planner</a></li>
+                <li><a href="generator.html" class="active">Trip Generator</a></li>
+                <li><a href="mood.html">Travel Mood</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Random Trip Generator</h1>
+            <p>Choose your travel style and budget to get a destination idea.</p>
+        </section>
+
+        <section class="form-box">
+            <form id="generatorForm">
+                <label for="travelType">Travel Type</label>
+                <select id="travelType">
+                    <option value="">Select Travel Type</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="relaxation">Relaxation</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="nature">Nature</option>
+                </select>
+
+                <label for="budgetRange">Budget Range</label>
+                <select id="budgetRange">
+                    <option value="">Select Budget</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <button type="submit">Generate Trip</button>
+            </form>
+        </section>
+
+        <section class="result-box">
+            <h2>Your Suggested Destination</h2>
+
+            <div id="tripResult">
+                <p>No destination generated yet.</p>
+            </div>
+
+            <button id="surpriseBtn">Surprise Me Again</button>
+            <button id="saveWishlistBtn">Save to Wishlist</button>
+
+            <p id="wishlistMessage"></p>
+        </section>
+
+        <section class="saved-section">
+            <h2>My Wishlist</h2>
+            <div id="wishlistBox"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>TravelNest</h2>
+            <p>Your simple travel planning companion.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/generator.js"></script>
+</body>
+</html>

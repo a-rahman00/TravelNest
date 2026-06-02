@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Home</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png.svg">
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">TravelNest</a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="budget.html">Budget Planner</a></li>
+                <li><a href="generator.html">Trip Generator</a></li>
+                <li><a href="mood.html">Travel Mood</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Plan Your Perfect Trip with TravelNest</h1>
+                <p>
+                    Discover beautiful destinations, plan your travel budget,
+                    save your dream places, and make your next journey stress-free.
+                </p>
+
+                <p class="travel-quote" id="travelQuote">
+                    “Adventure awaits.”
+                </p>
+
+                <a href="destinations.html" class="btn">Explore Destinations</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Beautiful beach destination">
+            </div>
+        </section>
+
+        <!-- Destination of the Day -->
+        <section class="destination-day section-box">
+            <h2>Destination of the Day</h2>
+            <div class="day-card" id="destinationOfDay">
+                <h3>Loading destination...</h3>
+                <p>Please wait while we find today’s travel inspiration.</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-card">
+                <h3>Explore</h3>
+                <p>Search destinations by name or continent.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Plan</h3>
+                <p>Calculate your estimated travel budget easily.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Save</h3>
+                <p>Store your favourite destinations using localStorage.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>TravelNest</h2>
+            <p>Your simple travel planning companion.</p>
+
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" id="newsletterEmail" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <p id="newsletterMessage"></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Destinations</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png.svg">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">TravelNest</a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="budget.html">Budget Planner</a></li>
+                <li><a href="generator.html">Trip Generator</a></li>
+                <li><a href="mood.html">Travel Mood</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Destination Explorer</h1>
+            <p>Search and filter destinations for your next trip.</p>
+        </section>
+
+        <!-- Search and Filter -->
+        <section class="filter-section">
+            <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search destination name">
+    <div id="searchSuggestions" class="suggestions-box"></div>
+</div>
+
+            <select id="continentFilter">
+                <option value="all">All Continents</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Africa">Africa</option>
+                <option value="North America">North America</option>
+            </select>
+        </section>
+
+        <!-- Destination Cards -->
+        <section class="destination-grid" id="destinationGrid">
+            <!-- Cards will be added using JavaScript -->
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="destinationModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+
+            <h3>Popular Attractions</h3>
+            <ul id="modalAttractions"></ul>
+
+            <h3>Travel Cost Comparison</h3>
+            <table>
+                <tr>
+                    <th>Budget Type</th>
+                    <th>Estimated Cost</th>
+                </tr>
+                <tr>
+                    <td>Low</td>
+                    <td id="lowCost"></td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td id="mediumCost"></td>
+                </tr>
+                <tr>
+                    <td>High</td>
+                    <td id="highCost"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>TravelNest</h2>
+            <p>Your simple travel planning companion.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/destinations.js"></script>
+</body>
+</html>

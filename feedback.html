@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Feedback</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png.svg">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">TravelNest</a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="budget.html">Budget Planner</a></li>
+                <li><a href="generator.html">Trip Generator</a></li>
+                <li><a href="mood.html">Travel Mood</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Feedback & Support</h1>
+            <p>Send us your feedback or check common travel planning questions.</p>
+        </section>
+
+        <section class="form-box">
+            <form id="feedbackForm">
+                <label for="userName">Name</label>
+                <input type="text" id="userName" placeholder="Enter your name">
+
+                <label for="userEmail">Email</label>
+                <input type="email" id="userEmail" placeholder="Enter your email">
+
+                <label for="userMessage">Message</label>
+                <textarea id="userMessage" rows="5" placeholder="Enter your message"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+
+            <p id="feedbackMessage"></p>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I save a destination?</button>
+                <div class="faq-answer">
+                    <p>You can save destinations from the Random Trip Generator page using the wishlist button.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Can I calculate my travel budget?</button>
+                <div class="faq-answer">
+                    <p>Yes, the Budget Planner page helps you calculate your total trip cost.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Does TravelNest store my data?</button>
+                <div class="faq-answer">
+                    <p>TravelNest stores basic user choices in the browser using localStorage.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>TravelNest</h2>
+            <p>Your simple travel planning companion.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/feedback.js"></script>
+</body>
+</html>
