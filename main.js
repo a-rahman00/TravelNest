@@ -3,12 +3,11 @@ function saveToLocalStorage(key, value) {
     localStorage.setItem(key, JSON.stringify(value));
 }
 
-// Reusable function to get data from localStorage
 function getFromLocalStorage(key) {
     return JSON.parse(localStorage.getItem(key));
 }
 
-// Hamburger menu
+/*Hamburger menu*/
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 
@@ -18,7 +17,7 @@ if (hamburger && navLinks) {
     });
 }
 
-// Auto-changing travel quotes
+/* Auto-changing travel quotes*/
 let quoteIndex = 0;
 const travelQuote = document.getElementById("travelQuote");
 
@@ -35,8 +34,8 @@ if (travelQuote) {
 }
 
 // Destination of the Day
-const destinationOfDay = document.getElementById("destinationOfDay");
 
+const destinationOfDay = document.getElementById("destinationOfDay");
 if (destinationOfDay) {
     const today = new Date();
     const dayNumber = today.getDate();

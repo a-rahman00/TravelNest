@@ -64,14 +64,13 @@ closeModal.addEventListener("click", function () {
     destinationModal.style.display = "none";
 });
 
-// Close modal when clicking outside box
 window.addEventListener("click", function (event) {
     if (event.target === destinationModal) {
         destinationModal.style.display = "none";
     }
 
-
-});// Show live search suggestions
+});
+// Show live search suggestions
 function showSuggestions() {
     const searchText = searchInput.value.toLowerCase();
 

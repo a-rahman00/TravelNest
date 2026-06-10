@@ -1,7 +1,6 @@
 const generatorForm = document.getElementById("generatorForm");
 const travelType = document.getElementById("travelType");
 const budgetRange = document.getElementById("budgetRange");
-
 const tripResult = document.getElementById("tripResult");
 const surpriseBtn = document.getElementById("surpriseBtn");
 const saveWishlistBtn = document.getElementById("saveWishlistBtn");
